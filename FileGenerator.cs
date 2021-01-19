@@ -1,20 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CinemaTicketBooking
 {
 	class FileGenerator : FileController
 	{
 		public static Random rnd = new Random();
-		List<int> movieTimes = new List<int>() { 60, 90, 120, 150 };
-		List<int> prizeRange = new List<int>() { 20, 30, 35, 50 };
-		List<MovieTitle> movieTitleList = new List<MovieTitle>();
-		List<Ticket> repertoir = new List<Ticket>();
+		readonly List<int> movieTimes = new List<int>() { 60, 90, 120, 150 };
+		readonly List<int> prizeRange = new List<int>() { 20, 30, 35, 50 };
+		readonly List<MovieTitle> movieTitleList = new List<MovieTitle>();
+		readonly List<Ticket> repertoir = new List<Ticket>();
 		public void GenerateDataToFile(string path)
 		{
 			ReadTitlesFromFile("Titles.txt");
@@ -30,7 +26,7 @@ namespace CinemaTicketBooking
 				int seat = rnd.Next(1, 51);
 				int movieTime = movieTimes[rnd.Next(0, 4)];
 				prize = prizeRange[rnd.Next(0, 4)];
-				MovieTitle movieTitle = new MovieTitle();
+				MovieTitle movieTitle;
 				do
 				{
 					movieTitle = movieTitleList[rnd.Next(0, movieTitleList.Count)];
