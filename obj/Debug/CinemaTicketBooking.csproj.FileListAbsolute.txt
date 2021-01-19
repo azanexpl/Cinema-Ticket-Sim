@@ -1,0 +1,7 @@
+C:\Users\azane\Desktop\CinemaTicketBooking\bin\Debug\CinemaTicketBooking.exe.config
+C:\Users\azane\Desktop\CinemaTicketBooking\bin\Debug\CinemaTicketBooking.exe
+C:\Users\azane\Desktop\CinemaTicketBooking\bin\Debug\CinemaTicketBooking.pdb
+C:\Users\azane\Desktop\CinemaTicketBooking\obj\Debug\CinemaTicketBooking.csprojAssemblyReference.cache
+C:\Users\azane\Desktop\CinemaTicketBooking\obj\Debug\CinemaTicketBooking.csproj.CoreCompileInputs.cache
+C:\Users\azane\Desktop\CinemaTicketBooking\obj\Debug\CinemaTicketBooking.exe
+C:\Users\azane\Desktop\CinemaTicketBooking\obj\Debug\CinemaTicketBooking.pdb
